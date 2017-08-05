@@ -14,6 +14,7 @@
 <script src="Vue/Assets/lib/picker.js"></script>
 <script src="Vue/Assets/lib/picker.time.js"></script>
         <script langage="text/javascript">
+            
             var tab=<?php echo json_encode($wilayas);?>;
 var tab1=<?php echo json_encode($communes);?>;
                       var map;
@@ -29,11 +30,14 @@ var tab1=<?php echo json_encode($communes);?>;
         }); 
       }
            $(document).ready(function(){
+                $("#second").hide();
                 $(".button-collapse").sideNav();
-                $('.datepicker').pickadate({
+                $('#dated').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15,
         min:true,
+    closeOnSelect: true,
+closeOnClear: true,
     formatSubmit: 'yyyy-mm-dd'// Creates a dropdown of 15 years to control year
     
   });   
@@ -88,6 +92,18 @@ $('.timepicker').pickatime({
                  
              });
                $('select').material_select();
+                $("#dated").change(function(){
+                     $('#second').hide();
+                     $('#datea').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15,
+        min: $("#dated").val(),
+    formatSubmit: 'yyyy-mm-dd'// Creates a dropdown of 15 years to control year
+    
+  });   
+                    $('#second').show(500);
+                    
+                });
            });
           
 </script>
@@ -209,6 +225,7 @@ $('.timepicker').pickatime({
           <label for="heurd">heur de  depart</label>
         </div>
       </div>
+        <div id="second">
         <div class="row">
         <div class="input-field col s6">
           <select id="wilayaa" name="wilayaa" required="" aria-required="true">
@@ -269,7 +286,7 @@ Plateau</option>
     <i class="material-icons right">send</i>
   </button>
         
-        </div>
+        </div></div>
     </form>
   </div>
 </div>

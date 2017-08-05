@@ -30,7 +30,7 @@ var tab1=<?php echo json_encode($communes);?>;
       }
            $(document).ready(function(){
                 $(".button-collapse").sideNav();
-                $('.datepicker').pickadate({
+                $('#dated').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15,
         min:true,
@@ -88,6 +88,18 @@ $('.timepicker').pickatime({
                  
              });
                $('select').material_select();
+               $("#dated").change(function(){
+                     $('#second').hide();
+                     $('#datea').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15,
+        min: $("#dated").val(),
+    formatSubmit: 'yyyy-mm-dd'// Creates a dropdown of 15 years to control year
+    
+  });   
+                    $('#second').show(500);
+                    
+                });
            });
           
 </script>
