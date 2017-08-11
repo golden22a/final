@@ -35,6 +35,7 @@ session_start();?>
          padding-top: 20px;
          padding-bottom: 20px;
      }
+  
      p{
          font-size: 20px;
      }
@@ -42,8 +43,18 @@ session_start();?>
          padding-bottom: 30px;
      }
      #wraper{
-         background-color:lightgrey;
+         background-image: url("Vue/Assets/bg1.jpg");
+         background-size: cover;
          color: white;
+     }
+        #wraper_1,.row{
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+     #wraper_1{
+                  background-image: url("Vue/Assets/bg2.jpg");
+         background-size: cover;
+         
      }
      @media(max-width:768) {
          
@@ -74,14 +85,14 @@ session_start();?>
 <body>
      <nav>
     <div class="nav-wrapper white">
-      <a href="#!" class="brand-logo center"><img src="Vue/Assets/logo1.png" id="logo"  width="40px"></a>
+      <a href="#!" class="brand-logo center"><img src="Vue/Assets/logo.png" id="logo"  width="50px"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" id="menu">menu</i></a>
       
     </div>
   </nav>
 
         
-    <div id="wraper">
+    <div id="wraper_1">
     <div class="container">
         <div class="row">
 <div class="offset-xl1 offset-l1 col xl5 col l5 col m6 col s12 "><a href="login_expediteur.php">

@@ -22,3 +22,27 @@ function changeinfouser($id,$pwd,$pwdn){
     return $etat;
     
 }
+
+function changeMail($id,$mail){
+     global $bdd;
+
+    $req=$bdd->prepare("update `prestataire` set `Email_gerant`=:mail   WHERE `id`=:id");
+  $req->bindParam(':id',$id,PDO::PARAM_STR);
+     $req->bindParam(':mail',$mail,PDO::PARAM_STR);
+    $etat=$req->execute();
+    
+    return $etat;
+    
+}
+
+function changePhone($id,$phone){
+     global $bdd;
+
+    $req=$bdd->prepare("update `prestataire` set `Telephone_gerant`=:phone   WHERE `id`=:id");
+  $req->bindParam(':id',$id,PDO::PARAM_STR);
+     $req->bindParam(':phone',$phone,PDO::PARAM_STR);
+    $etat=$req->execute();
+    
+    return $etat;
+    
+}
