@@ -286,15 +286,17 @@
      <h1 style=" text-align: center;">Vos informations</h1>
        
         <br><br><br><br>
-        <h5>Nom d'entreprise : </h5>  <?php echo $_SESSION['Nom_entreprise']; ?>
-        <h5>Nom d'utilisateur : </h5><?php echo $_SESSION['Nom_user']; ?>
-        <h5>Registre commerce :</h5><?php echo $_SESSION['Registre_commerce']; ?>
-        <h5>Rue :</h5><?php echo $_SESSION['Rue']; ?>
-        <h5>Commun :</h5><?php echo $_SESSION['Commun']; ?>
-        <h5>Wilaya :</h5><?php echo $_SESSION['Wilaya']; ?>
-        <h5>Email :</h5><?php echo $_SESSION['Email_user']; ?>
-        <h5>Telephone :</h5><?php echo $_SESSION['Telephone_use']; ?>
-        <h5>Password :</h5> ****************
+        <h5>Nom d'entreprise : </h5>  <?php echo   $nomm_en; ?>
+        <h5>Nom d'utilisateur : </h5><?php echo $nomm_ut; ?>
+        <h5>Registre commerce :</h5><?php echo $reg ?>
+        <h5>Rue :</h5><?php echo $rue ?>
+        <h5>Commun :</h5><?php echo $commun ?>
+        <h5>Wilaya :</h5><?php echo $wilaya ?>
+        <h5>Email :</h5><?php echo $email; ?>
+        <h5>Telephone :</h5><?php echo  $telephone; ?>
+        <h5>Password :</h5> ****************  <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm' onclick='fset("4");'>
+    modifier
+</button>
         
        <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
      aria-labelledby="myModalLabel" aria-hidden="true">
