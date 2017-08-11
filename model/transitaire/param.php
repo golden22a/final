@@ -9,3 +9,16 @@ function getInfoUser($id){
     return $etat;
     
 }
+function changeinfouser($id,$pwd,$pwdn){
+     global $bdd;
+    $pwd=sha1($pwd);
+    $pwdn=sha1($pwdn);
+    $req=$bdd->prepare("update `prestataire` set `pwd`=:pwdn   WHERE `id`=:id and `pwd`=:pwd");
+  $req->bindParam(':id',$id,PDO::PARAM_STR);
+     $req->bindParam(':pwd',$pwd,PDO::PARAM_STR);
+     $req->bindParam(':pwdn',$pwdn,PDO::PARAM_STR);
+    $etat=$req->execute();
+    
+    return $etat;
+    
+}

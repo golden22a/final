@@ -1,7 +1,9 @@
 <?php
 session_start();
 if($_SESSION['type']==1){
-include_once('Model/transitaire/param.php  ');
+    include_once('Model/transitaire/param.php  ');
+    if(!isset($_POST['pwn'])){
+
 
     $etat=getInfoUser($_SESSION['id']);
 
@@ -21,6 +23,23 @@ $time=date("H:i");
   
 include_once('Vue/param/index.php');
 
-}else{
+}
+else{
+    $etat=changeinfouser($_SESSION['id'],$_POST['pwd'],$_POST['pwn']);
+    if($etat){
+        
+                   echo "<script>
+alert('Password succesfully changed ');
+window.location.href='espace_transitaire.php';
+</script>";
+}  else
+                           echo "<script>
+alert('Mot de pass incorrect ');
+window.location.href='param.php';
+</script>";
+    }
+}
+       
+       else{
     session_destroy();
     header("location:login_transitaire.php");}

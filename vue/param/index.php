@@ -294,7 +294,7 @@
         <h5>Wilaya :</h5><?php echo $wilaya ?>
         <h5>Email :</h5><?php echo $email; ?>
         <h5>Telephone :</h5><?php echo  $telephone; ?>
-        <h5>Password :</h5> ****************  <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm' onclick='fset("4");'>
+        <h5>Password :</h5> ****************  <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm'>
     modifier
 </button>
         
@@ -317,22 +317,28 @@
             <!-- Modal Body -->
             <div class="modal-body">
                 
-                <form role="form-horizontal" method="post">
+                <form role="form-horizontal" method="post" id='pwdchange'>
                   <div class="form-group">
                       <div class="col-sm10">
-                      <input type="text" class="form-control"
-                      id="exampleInputEmail1" placeholder="nom du chauffeur" name="cf_name" required/>
+                      <input type="password" class="form-control"
+                      id="pw" placeholder="Mot de passe actuelle" name="pwd" required/>
                         </div>
                       </div>
                   <div class="form-group">
                      <div class="col-sm10">
-                      <input type="text" class="form-control"
-                          id="exampleInputPassword1" placeholder="matricul" name="matricul" required/>
+                      <input type="password" class="form-control"
+                          id="p1" placeholder="Nouveau Mot de passe" name="pwn" required/>
                       </div>
                       <input type="hidden" id="x" name="id_annonce" value>
+                  </div>  <div class="form-group">
+                     <div class="col-sm10">
+                      <input type="password" class="form-control"
+                          id="p2" placeholder="Retaper le mot de passe" name="pwn1" required/>
+                      </div>
+                    
                   </div>
                      <div class="col-sm-offset-5 col-sm-4">
-                  <button type="submit" class="btn btn-info btn-lg">reserver</button>
+                  <button type="button" class="btn btn-info btn-lg" onclick='fset();'>Modifier</button>
                     </div>
                 </form>
                 
@@ -361,8 +367,14 @@
     <!-- Demo Js -->
     <script src="Vue/Assets/admin/js/demo.js"></script>
     <script>
-    function fset(x){
-            $("#x").val(x);
+    function fset(){
+            if($('#p1').val()==$('#p2').val() &&  $('#p1').val() &&  $('#p2').val()&&  $('#pw').val() ){
+                $('#pwdchange').submit();
+            
+            }else{
+                
+                alert('les deux champ ne sont pas identique ou un champ nest pas remplis');
+            }
             
         }
     </script>
