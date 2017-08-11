@@ -282,92 +282,23 @@
     </section>
 
     <section class="content">
-        <div class="container-fluidr">
-        <div class="block-header">
-                </div>
-            <div class="row clearfix">
-             <a href="annonce_deposer_transitaire.php"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-blue hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">file_download</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">Annonce deposer</div>
-                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"><?php echo $nombre; ?></div>
-                        </div>
-                    </div>
-                
-        </div></a>
-                <a href="annonce_terminer_transitaire.php"> <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-             <div class="info-box bg-pink hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">file_upload</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">course terminer</div>
-                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"><?php echo $terminer; ?></div>
-                        </div>
-                    </div>
-                     </div></a>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                 <div class="info-box bg-green hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">monetization_on</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">chiffre daffaire</div>
-                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"> <?php echo $chifre; ?> DA</div>
-                        </div>
-                    </div>
-                         </div>
-                         <a href="annonce_nonpayer_transitaire.php"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                 <div class="info-box bg-red hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">monetization_on</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">reste a paye</div>
-                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"><?php echo $reste; ?> DA</div>
-                        </div>
-                             </div></div></a>
-    </div> </div>
-        <div class="row clearfix">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="body table-responsive">
-            <table class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                <td>wilaya de depart</td> 
-                     <td>Adreese</td>
-                     <td>date de depart</td>
-                     <td> heur de depart</td>
-                     <td>Wilaya darriver</td>
-                     <td>Adresse</td>
-                    <td>date arriver</td>
-                     <td>heur darriver</td>
-                     <td>Camion</td>
-                    <td>Tonage</td>
-                    <td>prix</td>
-                    <td>action</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    foreach($affiche as $cle=>$ss)
-                    {
-                        echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td><td><button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm' onclick='fset(".$ss['id'].");'>
-    reserver
-</button></td></tr>";
-                        
-                    }
-                    
-                    ?>
-                </tbody>
-            </table>
-                </div>
-                </div>
-        </div>
-        <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
+      
+     <h1 style=" text-align: center;">Vos informations</h1>
+       
+        <br><br><br><br>
+        <h5>Nom d'entreprise : </h5>  <?php echo   $nomm_en; ?>
+        <h5>Nom d'utilisateur : </h5><?php echo $nomm_ut; ?>
+        <h5>Registre commerce :</h5><?php echo $reg ?>
+        <h5>Rue :</h5><?php echo $rue ?>
+        <h5>Commun :</h5><?php echo $commun ?>
+        <h5>Wilaya :</h5><?php echo $wilaya ?>
+        <h5>Email :</h5><?php echo $email; ?>
+        <h5>Telephone :</h5><?php echo  $telephone; ?>
+        <h5>Password :</h5> ****************  <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm'>
+    modifier
+</button>
+        
+       <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
      aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -386,22 +317,28 @@
             <!-- Modal Body -->
             <div class="modal-body">
                 
-                <form role="form-horizontal" method="post">
+                <form role="form-horizontal" method="post" id='pwdchange'>
                   <div class="form-group">
                       <div class="col-sm10">
-                      <input type="text" class="form-control"
-                      id="exampleInputEmail1" placeholder="nom du chauffeur" name="cf_name" required/>
+                      <input type="password" class="form-control"
+                      id="pw" placeholder="Mot de passe actuelle" name="pwd" required/>
                         </div>
                       </div>
                   <div class="form-group">
                      <div class="col-sm10">
-                      <input type="text" class="form-control"
-                          id="exampleInputPassword1" placeholder="matricul" name="matricul" required/>
+                      <input type="password" class="form-control"
+                          id="p1" placeholder="Nouveau Mot de passe" name="pwn" required/>
                       </div>
                       <input type="hidden" id="x" name="id_annonce" value>
+                  </div>  <div class="form-group">
+                     <div class="col-sm10">
+                      <input type="password" class="form-control"
+                          id="p2" placeholder="Retaper le mot de passe" name="pwn1" required/>
+                      </div>
+                    
                   </div>
                      <div class="col-sm-offset-5 col-sm-4">
-                  <button type="submit" class="btn btn-info btn-lg">reserver</button>
+                  <button type="button" class="btn btn-info btn-lg" onclick='fset();'>Modifier</button>
                     </div>
                 </form>
                 
@@ -430,8 +367,14 @@
     <!-- Demo Js -->
     <script src="Vue/Assets/admin/js/demo.js"></script>
     <script>
-    function fset(x){
-            $("#x").val(x);
+    function fset(){
+            if($('#p1').val()==$('#p2').val() &&  $('#p1').val() &&  $('#p2').val()&&  $('#pw').val() ){
+                $('#pwdchange').submit();
+            
+            }else{
+                
+                alert('les deux champ ne sont pas identique ou un champ nest pas remplis');
+            }
             
         }
     </script>
