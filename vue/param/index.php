@@ -286,17 +286,55 @@
      <h1 style=" text-align: center;">Vos informations</h1>
        
         <br><br><br><br>
-        <h5>Nom d'entreprise : </h5>  <?php echo   $nomm_en; ?>
-        <h5>Nom d'utilisateur : </h5><?php echo $nomm_ut; ?>
-        <h5>Registre commerce :</h5><?php echo $reg ?>
-        <h5>Rue :</h5><?php echo $rue ?>
-        <h5>Commun :</h5><?php echo $commun ?>
-        <h5>Wilaya :</h5><?php echo $wilaya ?>
-        <h5>Email :</h5><?php echo $email; ?>
-        <h5>Telephone :</h5><?php echo  $telephone; ?>
-        <h5>Password :</h5> ****************  <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm'>
-    modifier
-</button>
+        <table style="width:40%">
+
+  <tr>
+    <td><h5>Nom d'entreprise : </h5></td>
+    <td><?php echo   $nomm_en; ?></td> 
+  </tr>
+  <tr>
+    <td><h5>Nom d'utilisateur : </h5></td>
+    <td>  <?php echo $nomm_ut; ?></td> 
+  </tr>
+  <tr>
+    <td><h5>Registre commerce :</h5></td>
+    <td><?php echo $reg ?></td> 
+  </tr>
+            <tr>
+    <td>
+<h5>Rue :</h5></td>
+    <td><?php echo $rue ?></td> 
+  </tr>
+             <tr>
+    <td><h5>Commun :</h5></td>
+    <td>   <?php echo $commun ?></td> 
+  </tr>
+             <tr>
+    <td>   <h5>Wilaya :</h5></td>
+    <td> <?php echo $wilaya ?></td> 
+  </tr>
+             <tr>
+    <td><h5>Email :</h5></td>
+    <td> <?php echo $email; ?></td> 
+            
+  </tr>
+             <tr>
+    <td> <h5>Telephone :</h5></td>
+    <td> <?php echo  $telephone; ?></td>
+                  <td>  
+      <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm2'> modifier</button>
+      </td>
+  </tr>
+             <tr>
+    <td><h5>Password :</h5></td>
+    <td>**************** </td>
+      <td>  
+      <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm'> modifier</button>
+      </td>
+  </tr>
+</table>
+          
+    
         
        <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
      aria-labelledby="myModalLabel" aria-hidden="true">
@@ -310,7 +348,7 @@
                        <span class="sr-only">Close</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    Reserver
+                    Modifier
                 </h4>
             </div>
             
@@ -339,6 +377,46 @@
                   </div>
                      <div class="col-sm-offset-5 col-sm-4">
                   <button type="button" class="btn btn-info btn-lg" onclick='fset();'>Modifier</button>
+                    </div>
+                </form>
+                
+                
+            </div></div></div></div>
+        
+        
+          
+        
+        
+        
+          <div class="modal fade" id="myModalNorm2" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Modifier
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form role="form-horizontal" method="post" id='phonechange'>
+                  <div class="form-group">
+                      <div class="col-sm10">
+                      <input type="text" class="form-control"
+                      id="pw" placeholder="Nouveau numéro" name="ph" required/>
+                        </div>
+                      </div>
+            
+                     <div class="col-sm-offset-5 col-sm-4">
+                  <button type="submit" class="btn btn-info btn-lg" >Modifier</button>
                     </div>
                 </form>
                 
@@ -377,6 +455,7 @@
             }
             
         }
+        
     </script>
 </body>
 
