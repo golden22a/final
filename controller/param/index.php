@@ -63,7 +63,6 @@ else{
         $wilaya=  $etat['Wilaya'];
         $email =  $etat['Email_gerant'];
         $telephone =  $etat['Telephone_gerant'];
-        $password =  $etat['pwd'];
         
         date_default_timezone_set('Africa/Algiers');
 $date=date("Y-m-d");
