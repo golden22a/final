@@ -100,6 +100,7 @@ $('.timepicker').pickatime({
                     $('#second').show(500);
                     
                 });
+                $('#second').hide();
            });
           
 </script>
@@ -221,6 +222,7 @@ $('.timepicker').pickatime({
           <label for="heurd">heur de  depart</label>
         </div>
       </div>
+        <div id='second'>
         <div class="row">
         <div class="input-field col s6">
           <select id="wilayaa" name="wilayaa" required="" aria-required="true">
@@ -281,7 +283,7 @@ Plateau</option>
     <i class="material-icons right">send</i>
   </button>
         
-        </div>
+        </div></div>
     </form>
   </div>
 </div>
@@ -315,6 +317,7 @@ Plateau</option>
             © 2017 Copy-right goldencorp
             </div>
           </div>
+        </div>
         </footer>
 </body>
 

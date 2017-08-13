@@ -96,7 +96,7 @@ Order Aknowlegement";
 $pdf->Write(0,$chai , '', 0, 'C', true, 0, false, false, 0);
 //$pdf->writeHTML($html, true, false, true, false, '');
 
-$pdf->Image('brilog.png', '', '',65 ,40, 'PNG','' , 'C', true, 300, 'C', false, false,0, false, false, false);
+$pdf->Image('Vue/Assets/brilog.png', '', '',65 ,40, 'PNG','' , 'C', true, 300, 'C', false, false,0, false, false, false);
 
 
 
