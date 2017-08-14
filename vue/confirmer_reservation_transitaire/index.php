@@ -313,7 +313,7 @@
                         echo "<tr><td>".$ss['Nom_entreprise']."</td><td>".$ss['Nom_user']."</td><td>".$ss['numero_entrepot']."</td><td>".$ss['adresse_entrepot']."</td></td><td><button class='btn btn-info btn-sm' data-toggle='modal' data-target='#info".$ss['id_annonce']."'>
     info
 </button></td></td><td><button class='btn btn-primary btn-sm' data-toggle='modal' data-target='#myModalNorm' onclick='fset(".$ss[0].");'>
-    reserver
+    confirmer
 </button></td><td><button class='btn btn-danger btn-sm'  onclick='anl(".$ss[0].");'>
     refuser
 </button></td></tr>";
@@ -390,7 +390,7 @@
                        <span class="sr-only">Close</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    Reserver
+                    Confirmer
                 </h4>
             </div>
             
@@ -412,7 +412,7 @@
                       <input type="hidden" id="x" name="id_annonce" value>
                   </div>
                      <div class="col-sm-offset-5 col-sm-4">
-                  <button type="submit" class="btn btn-info btn-lg">reserver</button>
+                  <button type="submit" class="btn btn-info btn-lg">Confirmer</button>
                     </div>
                 </form>
                 
@@ -450,8 +450,5 @@
             $.post('confirmer_reservation_expediteur.php',{annonce:x},function(result){
                 location.reload();
             });
-    </script>
-        </div></section>
-</body>
-
-</html>
+    </script></body>   </head>  </html>
+        <

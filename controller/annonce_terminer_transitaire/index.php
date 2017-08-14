@@ -5,7 +5,7 @@ if($_SESSION['type']==1){
     date_default_timezone_set('Africa/Algiers');
 $date=date("Y-m-d");
     $affiche=terminer($_SESSION['id'],$date);
-include_once('Vue/annonce_deposer_transitaire/index.php');
+include_once('Vue/annonce_terminer_transitaire/index.php');
 }
 else{
     session_destroy();

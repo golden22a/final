@@ -283,7 +283,12 @@ Plateau</option>
     <i class="material-icons right">send</i>
   </button>
         
+<<<<<<< HEAD
         </div></div>
+=======
+        </div>
+        </div>
+>>>>>>> halim
     </form>
   </div>
 </div>
@@ -316,9 +321,12 @@ Plateau</option>
             <div class="container">
             © 2017 Copy-right goldencorp
             </div>
+<<<<<<< HEAD
           </div>
         </div>
+=======
+              </div></div>
+>>>>>>> halim
         </footer>
 </body>
-
     </html>
