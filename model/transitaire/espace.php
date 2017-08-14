@@ -214,7 +214,7 @@ $pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'colo
 
 
 $tabul="                                                              ";
-$numc = "Numéro de confirmation :".$ss[id_annonce"];
+$numc = "Numéro de confirmation :".$ss['id_annonce']."";
 // Set some content to print
 
 $pdf->Write(0, $date.$tabul.$numc, '', 0, 'L', true, 0, false, false, 0);
@@ -222,8 +222,7 @@ $pdf->Write(0, $ref, '', 0, 'R', true, 0, false, false, 0);
 
 $pdf->SetFont('dejavusans', 'B', 20, '', true);
 
-$chai="
-Confirmation de commande 
+$chai="Confirmation de commande 
 Order Aknowlegement";
 
 
