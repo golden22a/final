@@ -288,6 +288,9 @@ Plateau</option>
 =======
         </div>
         </div>
+<<<<<<< HEAD
+>>>>>>> halim
+=======
 >>>>>>> halim
     </form>
   </div>
@@ -322,8 +325,12 @@ Plateau</option>
             © 2017 Copy-right goldencorp
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
           </div>
         </div>
+=======
+              </div></div>
+>>>>>>> halim
 =======
               </div></div>
 >>>>>>> halim

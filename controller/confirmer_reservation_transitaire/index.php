@@ -20,10 +20,13 @@ else{
           date_default_timezone_set('Africa/Algiers');
 $date=date("Y-m-d");
     pdf($_POST['id_annonce'],$date);
+<<<<<<< HEAD
                   echo "<script>
 alert('confirmation terminer');
 window.location.href='confirmer_reservation_transitaire.php';
 </script>";
+=======
+>>>>>>> halim
     }
     else{
         

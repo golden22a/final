@@ -64,6 +64,10 @@ else{
         $email =  $etat['Email_gerant'];
         $telephone =  $etat['Telephone_gerant'];
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> halim
         date_default_timezone_set('Africa/Algiers');
 $date=date("Y-m-d");
 $time=date("H:i");

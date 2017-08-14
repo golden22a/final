@@ -442,6 +442,7 @@
     <script src="Vue/Assets/admin/js/demo.js"></script>
           
     <script>
+        
        function fset(x){
             $("#x").val(x);
             
@@ -449,6 +450,10 @@
         function anl(x){
             $.post('confirmer_reservation_expediteur.php',{annonce:x},function(result){
                 location.reload();
+<<<<<<< HEAD
             });
+=======
+            })};
+>>>>>>> halim
     </script></body>   </head>  </html>
         <
