@@ -17,7 +17,9 @@ include_once('Vue/confirmer_reservation_transitaire/index.php');
 else{
     $etat=confirmer($_POST['id_annonce'],$_POST['cf_name'],$_POST['matricul']);
     if($etat){
-        
+          date_default_timezone_set('Africa/Algiers');
+$date=date("Y-m-d");
+    pdf($_POST['id_annonce'],$date);
                   echo "<script>
 alert('confirmation terminer');
 window.location.href='confirmer_reservation_transitaire.php';

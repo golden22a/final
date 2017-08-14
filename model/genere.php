@@ -15,7 +15,7 @@
 //               www.tecnick.com
 //               info@tecnick.com
 //============================================================+
-
+function generer($date,$ref,$ss){
 /**
  * Creates an example PDF TEST document using TCPDF
  * @package com.tecnick.tcpdf
@@ -26,7 +26,6 @@
 
 // Include the main TCPDF library (search for installation path).
 require_once('tcpdf/tcpdf.php');
-
 // create new PDF document
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
@@ -77,14 +76,13 @@ $pdf->AddPage();
 $pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'color'=>array(196,196,196), 'opacity'=>1, 'blend_mode'=>'Normal'));
 
 
-$date="vendredi 12 mai 2017";
+
 $tabul="                                                              ";
 $numc = "Numéro de confirmation :";
 // Set some content to print
 
 $pdf->Write(0, $date.$tabul.$numc, '', 0, 'L', true, 0, false, false, 0);
-$ref_a=" #ref de l’annonce_#ref du client final_F";
-$pdf->Write(0, $ref_a, '', 0, 'R', true, 0, false, false, 0);
+$pdf->Write(0, $ref, '', 0, 'R', true, 0, false, false, 0);
 
 $pdf->SetFont('dejavusans', 'B', 20, '', true);
 
@@ -121,10 +119,10 @@ $pdf->Write(0,$chai , '', 0, 'C', true, 0, false, false, 0);
 
 
 
-$left_column = '<br><br><br><br><b><u>Nom du client final (expéditeur)</u></b><br><br>#Nom de l’entreprise,<br>#Registre de commerce<br> Adresse de l’entrepôt.<br>Numéro de téléphone du gérant de   l’entrepôt  ';
+$left_column = '<br><br><br><br><b><u>Nom du client final (expéditeur)</u></b><br><br>'.$ss['nome'].',<br>'.$ss['registree'].'<br>'.$ss['adresse_entrepot'].'numero:'.$ss['numero_entrepot'].'<br>'.$ss['numeroe'].'';
 
 
-$right_column = '<br><br><br><br><b><u>Nom du prestataire logistique </u></b><br><br>#Nom de l’entreprise du 3.P.L,<br>#Registre de commerce <br>#Numéro de téléphone du responsable du compte mis sur la plateforme BrilLog';
+$right_column = '<br><br><br><br><b><u>Nom du prestataire logistique </u></b><br><br>'.$ss['nomp'].'<br>'.$ss['registrep'].' <br>'.$ss['numerop'].'';
 
 $y = $pdf->getY();
 
@@ -161,12 +159,12 @@ $html= '
 </thead>
 <tbody>
 <tr>
-<td width="14%">bloom</td>
-<td width="14%">bloom</td>
-<td width="14%">bloom</td>
-<td width="14%">bloom</td>
-<td width="14%">bloom</td>
-<td width="25%">bloom</td>
+<td width="14%">'.$ss["wilaya_d"].' '.$ss["commune_d"].' '.$ss["rue_d"].'</td>
+<td width="14%">'.$ss["date"].'</td>
+<td width="14%">'.$ss["wilaya_a"].' '.$ss["commune_a"].' '.$ss["rue_a"].'</td>
+<td width="14%">'.$ss["datea"].'</td>
+<td width="14%">'.$ss["type_camion"].'</td>
+<td width="25%">'.$ss["tonage"].'</td>
 </tr></tbody>
 </table>
 
@@ -179,11 +177,11 @@ $html='<br><br>
 <table border="1" width= "100%" cellpadding= "4">
 <tr>
 <td width= "40%">Identifiant de la flotte ou du camion :</td>
-<td width= "60%">Matricules </td>
+<td width= "60%">'.$ss['matricule'].' </td>
 </tr>
 <tr>
-<td width= "40%">Nom complet du chauffeur : *</td>
-<td width= "60%">Nom </td>
+<td width= "40%">Nom complet du chauffeur :</td>
+<td width= "60%">'.$ss['nom_chauffeur'].' </td>
 </tr>
 </table>
 ';
@@ -191,7 +189,7 @@ $html='<br><br>
       $pdf->writeHTML($html, true, false, true, false, 'R');
 
     
-    $left_column = '<br><br>Signature électronique  <br>du prestataire logistique   ';
+    $left_column = '<br><br>Signature   <br>du prestataire logistique   ';
 
 
 $right_column = '<br><br>Signature du client final et cachet ';
@@ -201,7 +199,8 @@ $right_column = '<br><br>Signature du client final et cachet ';
 
 $pdf->writeHTMLCell(100, '', 30, $y+140, $left_column, 0, 0, 1, true, 'L', true);
 $pdf->writeHTMLCell(80, '', '', '', $right_column, 0, 1, 1, true, 'L', true);
-    
     // This method has several options, check the source code documentation for more information.
 $pdf->Output('example_001.pdf', 'I');
+}
+?>
     

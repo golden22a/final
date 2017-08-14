@@ -306,7 +306,7 @@
                 <div class="body table-responsive">
                      <div class="panel panel-primary filterable">
             <div class="panel-heading">
-                <h3 class="panel-title">Annonces expediteur</h3>
+                <h3 class="panel-title">Annonces reserver et terminer</h3>
                 <div class="pull-right">
                     <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
                 </div>
@@ -326,7 +326,7 @@
                           <th><input type="text" class="form-control" placeholder="camion" disabled></th>
                         <th><input type="text" class="form-control" placeholder="tonage" disabled></th>
                         <th><input type="text" class="form-control" placeholder="prix" disabled></th>
-                         
+                         <th><input type="text" class="form-control" placeholder="Imprimer" disabled></th>
                          
                     </tr>      
                
@@ -337,7 +337,55 @@
                     foreach($affiche as $cle=>$ss)
                     {
                         
-                        echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td></tr>";
+                        echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td><td>sss</td></tr>";
+                        
+                    }
+                    
+                    ?>
+                </tbody>
+            </table>
+                         
+
+                    </div></div></div> </div>  </div>  
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="row">
+                <div class="body table-responsive">
+                     <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Annonce deposer et terminer</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+                </div>
+            </div>
+            <table id="table" class="table table-bordered table-striped display">
+                <thead>
+                     <tr class="filters">
+                         
+                        <th><input type="text" class="form-control" placeholder="wilaya de depart" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Adresse" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="date de depart" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="heur de depart" disabled></th>
+                          <th><input type="text" class="form-control" placeholder="wilaya darriver" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="adresse" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="date darriver" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="heur darriver" disabled></th>
+                          <th><input type="text" class="form-control" placeholder="camion" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="tonage" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="prix" disabled></th>
+                          <th><input type="text" class="form-control" placeholder="Imprimer" disabled></th>
+                         
+                         
+                    </tr>      
+               
+              
+                </thead>
+                <tbody>
+                    <?php
+                    foreach($affiche1 as $cle=>$ss)
+                    {
+                        
+                        echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td><td>sss</td></tr>";
                         
                     }
                     
