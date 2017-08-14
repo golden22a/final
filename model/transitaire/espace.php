@@ -157,9 +157,8 @@ function pdf($id,$date){
     $req->bindParam(':id',$id,PDO::PARAM_STR);
     $req->execute();
     $ss=$req->fetch();
-    $ref='annonce pretataire numero'.$ss['id_annonce'];
+    $ref='CAPX'.$ss['id_annonce'];
     $adressee=$ss['adresse_entrepot'];
-    
     
    require_once('Model/tcpdf/tcpdf.php');
 // create new PDF document
@@ -213,28 +212,33 @@ $pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'colo
 
 
 
-$tabul="                                                              ";
-$numc = "Numéro de confirmation :".$ss['id_annonce']."";
+$tabul="                                                                            ";
+$numc = "Numéro de confirmation   :    ".$ref;
 // Set some content to print
 
 $pdf->Write(0, $date.$tabul.$numc, '', 0, 'L', true, 0, false, false, 0);
-$pdf->Write(0, $ref, '', 0, 'R', true, 0, false, false, 0);
 
 $pdf->SetFont('dejavusans', 'B', 20, '', true);
 
-$chai="Confirmation de commande 
-Order Aknowlegement";
+$chai="
+Confirmation de commande 
+Order Aknowlegement
+
+";
 
 
 $pdf->Write(0,$chai , '', 0, 'C', true, 0, false, false, 0);
 //$pdf->writeHTML($html, true, false, true, false, '');
 
-$pdf->Image('brilog.png', '', '',65 ,40, 'PNG','' , 'C', true, 300, 'C', false, false,0, false, false, false);
+$pdf->Image('brilog.png', '', '',30 ,45, 'PNG','' , 'C', true, 300, 'C', false, false,0, false, false, false);
 
 
 
 
 $chai="
+
+
+
 
 
 
@@ -324,7 +328,7 @@ $html='<br><br>
       $pdf->writeHTML($html, true, false, true, false, 'R');
 
     
-    $left_column = '<br><br>Signature   <br>du prestataire logistique   ';
+    $left_column = '<br><br>Signature du prestataire logistique   ';
 
 
 $right_column = '<br><br>Signature du client final et cachet ';
