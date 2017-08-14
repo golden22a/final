@@ -157,7 +157,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="confirmer_reservation_transitaire/index.php">
+                        <a href="confirmer_reservation_transitaire.php">
                             <i class="material-icons">access_time</i>
                             <span>Confirmer une reservation</span>
                         </a>
