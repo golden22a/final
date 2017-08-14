@@ -340,7 +340,8 @@ $pdf->writeHTMLCell(100, '', 30, $y+140, $left_column, 0, 0, 1, true, 'L', true)
 $pdf->writeHTMLCell(80, '', '', '', $right_column, 0, 1, 1, true, 'L', true);
     // This method has several options, check the source code documentation for more information.
     ob_end_clean();
-$pdf->Output('example_001.pdf', 'I');
+   
+$pdf->Output($ref.'.pdf', 'F');
 }
     
     
