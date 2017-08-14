@@ -158,10 +158,16 @@ function pdf($id,$date){
     $req->execute();
     $ss=$req->fetch();
 <<<<<<< HEAD
+<<<<<<< HEAD
     $ref='annonce pretataire numero'.$ss['id_annonce'];
     $adressee=$ss['adresse_entrepot'];
     
     
+=======
+    $ref='CAPX'.$ss['id_annonce'];
+    $adressee=$ss['adresse_entrepot'];
+    
+>>>>>>> halim
 =======
     $ref='CAPX'.$ss['id_annonce'];
     $adressee=$ss['adresse_entrepot'];
@@ -220,6 +226,7 @@ $pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'colo
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $tabul="                                                              ";
 $numc = "Numéro de confirmation :".$ss[id_annonce"];
 // Set some content to print
@@ -227,11 +234,16 @@ $numc = "Numéro de confirmation :".$ss[id_annonce"];
 $pdf->Write(0, $date.$tabul.$numc, '', 0, 'L', true, 0, false, false, 0);
 $pdf->Write(0, $ref, '', 0, 'R', true, 0, false, false, 0);
 =======
+=======
+>>>>>>> halim
 $tabul="                                                                            ";
 $numc = "Numéro de confirmation   :    ".$ref;
 // Set some content to print
 
 $pdf->Write(0, $date.$tabul.$numc, '', 0, 'L', true, 0, false, false, 0);
+<<<<<<< HEAD
+>>>>>>> halim
+=======
 >>>>>>> halim
 
 $pdf->SetFont('dejavusans', 'B', 20, '', true);
@@ -239,7 +251,13 @@ $pdf->SetFont('dejavusans', 'B', 20, '', true);
 $chai="
 Confirmation de commande 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Order Aknowlegement";
+=======
+Order Aknowlegement
+
+";
+>>>>>>> halim
 =======
 Order Aknowlegement
 
@@ -251,7 +269,11 @@ $pdf->Write(0,$chai , '', 0, 'C', true, 0, false, false, 0);
 //$pdf->writeHTML($html, true, false, true, false, '');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $pdf->Image('brilog.png', '', '',65 ,40, 'PNG','' , 'C', true, 300, 'C', false, false,0, false, false, false);
+=======
+$pdf->Image('brilog.png', '', '',30 ,45, 'PNG','' , 'C', true, 300, 'C', false, false,0, false, false, false);
+>>>>>>> halim
 =======
 $pdf->Image('brilog.png', '', '',30 ,45, 'PNG','' , 'C', true, 300, 'C', false, false,0, false, false, false);
 >>>>>>> halim
@@ -269,6 +291,12 @@ $chai="
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> halim
 =======
 
 
@@ -356,7 +384,11 @@ $html='<br><br>
 
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     $left_column = '<br><br>Signature   <br>du prestataire logistique   ';
+=======
+    $left_column = '<br><br>Signature du prestataire logistique   ';
+>>>>>>> halim
 =======
     $left_column = '<br><br>Signature du prestataire logistique   ';
 >>>>>>> halim

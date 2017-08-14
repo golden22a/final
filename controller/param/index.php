@@ -65,6 +65,10 @@ else{
         $telephone =  $etat['Telephone_gerant'];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> halim
 =======
 
 >>>>>>> halim

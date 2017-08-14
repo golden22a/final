@@ -21,10 +21,13 @@ else{
 $date=date("Y-m-d");
     pdf($_POST['id_annonce'],$date);
 <<<<<<< HEAD
+<<<<<<< HEAD
                   echo "<script>
 alert('confirmation terminer');
 window.location.href='confirmer_reservation_transitaire.php';
 </script>";
+=======
+>>>>>>> halim
 =======
 >>>>>>> halim
     }

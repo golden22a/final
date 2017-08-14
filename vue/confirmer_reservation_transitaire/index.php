@@ -451,7 +451,11 @@
             $.post('confirmer_reservation_expediteur.php',{annonce:x},function(result){
                 location.reload();
 <<<<<<< HEAD
+<<<<<<< HEAD
             });
+=======
+            })};
+>>>>>>> halim
 =======
             })};
 >>>>>>> halim
