@@ -379,7 +379,7 @@
                        <span class="sr-only">Close</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    Reserverj
+                    Reserver
                 </h4>
             </div>
             

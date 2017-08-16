@@ -180,7 +180,16 @@ $('.timepicker').pickatime({
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" id="menu">menu</i></a>
       <ul class="right hide-on-med-and-down ">
         <li><a href="espace_transitaire.php" ><?php echo $_SESSION['user'];?></a></li>
-        <li><a href="deco.php">Deconnexion</a></li>
+      
+          
+            <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Mon Compte</a>
+
+           <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="param.php">Paramètres</a></li>
+            <li><a href="deco.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    
+  </ul>
+          
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="espace_transitaire.php"><?php echo $_SESSION['user'];?></a></li>
