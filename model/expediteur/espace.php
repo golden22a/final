@@ -88,7 +88,7 @@ function terminer_reserver($id){
      global $bdd;
     $req=$bdd->prepare("SELECT *,DATE_FORMAT(date, '%Y-%m-%d') DATEONLY, 
        DATE_FORMAT(date,'%H:%i:%s') TIMEONLY,DATE_FORMAT(datea, '%Y-%m-%d') DATEONLYA, 
-       DATE_FORMAT(datea,'%H:%i:%s') TIMEONLYA FROM `annonce_prestataire`,`reserver` WHERE `id_res`=:id and `id_annonce`=annonce_prestataire.id and `type`=1 and `deposer`=1 ");
+       DATE_FORMAT(datea,'%H:%i:%s') TIMEONLYA FROM `annonce_prestataire`,`reserver` WHERE `id_res`=:id and `id_annonce`=annonce_prestataire.id and `type`=1 ");
   $req->bindParam(':id',$id,PDO::PARAM_STR);
    $req->execute();
     print_r($req->errorInfo());
@@ -102,7 +102,7 @@ function terminer($id){
      global $bdd;
     $req=$bdd->prepare("SELECT *,DATE_FORMAT(date, '%Y-%m-%d') DATEONLY, 
        DATE_FORMAT(date,'%H:%i:%s') TIMEONLY,DATE_FORMAT(datea, '%Y-%m-%d') DATEONLYA, 
-       DATE_FORMAT(datea,'%H:%i:%s') TIMEONLYA FROM `annonce_expediteur`,`reserver` WHERE ` `id_annonce`=annonce_expediteur.id and `type`=0 and `deposer`=1 ");
+       DATE_FORMAT(datea,'%H:%i:%s') TIMEONLYA FROM `annonce_expediteur`,`reserver` WHERE ` `id_annonce`=annonce_expediteur.id and `type`=0 ");
   $req->bindParam(':id',$id,PDO::PARAM_STR);
    $req->execute();
     print_r($req->errorInfo());
