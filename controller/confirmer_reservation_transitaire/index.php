@@ -19,7 +19,8 @@ else{
     if($etat){
           date_default_timezone_set('Africa/Algiers');
 $date=date("Y-m-d");
-    pdf($_POST['id_annonce'],$date);
+    pdf_proforma($_POST['id_annonce'],$date);
+//    pdf($_POST['id_annonce'],$date);
         echo "<script>
 alert('annonce confirmer');
 window.location.href='espace_transitaire.php';
