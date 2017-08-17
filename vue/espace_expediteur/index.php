@@ -320,7 +320,9 @@
                      <td>Camion</td>
                     <td>Tonage</td>
                     <td>prix</td>
-                    <td>action</td>
+                    <td>Reserver</td>
+                    <td>Proformat</td>
+                    
                     </tr>
                 </thead>
                 <tbody>
@@ -329,7 +331,10 @@
                     {
                         echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td><td><button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm' onclick='fset(".$ss['id'].");'>
     reserver
-</button></td></tr>";
+</button></td>
+<td>
+<a class='btn btn-info btn-xs' href='espace_expediteur.php?annonce=".$ss['id']."' role='button' target='_blank'> PDF </a>
+</td></tr>";
                         
                     }
                     

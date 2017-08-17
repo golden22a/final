@@ -1,6 +1,9 @@
 <?php
 session_start();
 if($_SESSION['type']==2){
+     date_default_timezone_set('Africa/Algiers');
+$date=date("Y-m-d");
+$time=date("H:i");
 include_once('Model/expediteur/espace.php  ');
    if(isset($_POST['numero'])) {
     $etat=reserver($_POST['id_annonce'],$_SESSION['id'],$_POST['numero'],$_POST['adresse']);
@@ -18,10 +21,10 @@ alert('erreur re essayer svp');
 window.location.href='espace_expediteur.php';
 </script>";
     }
-}
-    date_default_timezone_set('Africa/Algiers');
-$date=date("Y-m-d");
-$time=date("H:i");
+}else if (isset($_GET['annonce'])){
+       pdf_proforma($_GET['annonce'],$date);
+   }
+   
     $nombre=annonce($_SESSION['id']);
     $terminer=annonce_terminer($_SESSION['id']);
     $affiche=affiche($date);

@@ -326,7 +326,7 @@
                           <th><input type="text" class="form-control" placeholder="camion" disabled></th>
                         <th><input type="text" class="form-control" placeholder="tonage" disabled></th>
                         <th><input type="text" class="form-control" placeholder="prix" disabled></th>
-                         <th><input type="text" class="form-control" placeholder="Imprimer" disabled></th>
+                         <th><input type="text" class="form-control" placeholder="PDF" disabled></th>
                          
                     </tr>      
                
@@ -337,7 +337,7 @@
                     foreach($affiche as $cle=>$ss)
                     {
                         
-                        echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td><td>sss</td></tr>";
+                        echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td><td><a class='btn btn-info btn-xs' href='espace_expediteur.php?annonce=".$ss['id']."' role='button' target='_blank'> PDF </a></td></tr>";
                         
                     }
                     

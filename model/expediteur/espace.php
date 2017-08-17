@@ -145,7 +145,7 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8',
 // set document information
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('brilog');
-$pdf->SetTitle('brilog reconnaisance');
+$pdf->SetTitle('brilog proformat');
 $pdf->SetSubject('TCPDF Tutorial');
 $pdf->SetKeywords('TCPDF, PDF, example, test, guide');
 $pdf->setPrintHeader(false);
@@ -189,14 +189,12 @@ $pdf->AddPage();
 $pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'color'=>array(196,196,196), 'opacity'=>1, 'blend_mode'=>'Normal'));
 
 
-$date="vendredi 12 mai 2017";
-$tabul="                                                              ";
+
+$tabul="                                                                                            ";
 $numc = "Numéro de facture: ".$ref;
 // Set some content to print
 
 $pdf->Write(0, $date.$tabul.$numc, '', 0, 'L', true, 0, false, false, 0);
-$ref_a=" #ref de l’annonce_#ref du client final_F";
-$pdf->Write(0, $ref_a, '', 0, 'R', true, 0, false, false, 0);
 
 $pdf->SetFont('dejavusans', 'B', 20, '', true);
 
@@ -241,7 +239,7 @@ $pdf->Write(0,$chai , '', 0, 'C', true, 0, false, false, 0);
 $left_column = '<br><br><br><br><b><u>Nom du client final (expéditeur)</u></b><br><br>'.$ss['nome'].',<br>'.$ss['registree'].'<br>'.$ss['adresse_entrepot'].'numero:'.$ss['numero_entrepot'].'<br>'.$ss['numeroe'].'';
 
 
-$right_column = '<br><br><br><br><b><u>Nom du prestataire logistique </u></b><br><br>'.$ss['nomp'].'<br>'.$ss['registrep'].' <br>'.$ss['numerop'].'';
+$right_column = '<br><br><br><br><b><u>Nom du prestataire logistique </u></b><br><br>'.$ss['nomp'].'<br>'.$ss['registrep'].'';
 $y = $pdf->getY();
 
 
@@ -295,15 +293,15 @@ $html='<br><br>
 <table border="1" width= "100%" cellpadding= "4">
 <tr>
 <td width= "50%"><b>Montant de la prestation : </b></td>
-<td width= "50%">#prix </td>
+<td width= "50%">'.$ss["prix"].' DZD</td>
 </tr>
 <tr>
 <td width= "50%"><b>T.V.A</b> </td>
-<td width= "50%">#prix*0.19</td>
+<td width= "50%">'.$ss["prix"]*0.19.'  DZD</td>
 </tr>
 <tr>
 <td width= "50%"><b>Prix final TTC </b> </td>
-<td width= "50%">#prix*1.19</td>
+<td width= "50%">'.$ss["prix"]*1.19.'  DZD</td>
 </tr>
 </table>
 ';
@@ -311,16 +309,9 @@ $html='<br><br>
       $pdf->writeHTML($html, true, false, true, false, 'R');
 
     
-    $left_column = '<br>La présente facture proforma s’arrête à la somme de : =chiffreEnLettre#prix _final_ttc   ';
-
-
+  
     
-
-
-
-$pdf->  writeHTMLCell(150, '', 20, $y+130, $left_column, 0, 0, 1, true, 'L', true);
-    
-    $left_column = '<br><br>L’offre est valide jusqu’au : #date de départ moins (-) 1 jour. ';
+    $left_column = '<br><br>L’offre est valide jusqu’au :   '.$ss["date"].' . ';
 
 $pdf->  writeHTMLCell(150, '', 20, $y+135, $left_column, 0, 0, 1, true, 'L', true);
 
