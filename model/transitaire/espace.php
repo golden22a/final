@@ -31,13 +31,13 @@ function annonce_terminer($id){
 
 function chiffre($id){
    global $bdd;
-    $req=$bdd->prepare("SELECT sum(prix) as prixf FROM `reserver`,`annonce_expediteur` WHERE `id_res`=:id  and `id_annonce`=annonce_expediteur.id and `deposer`=1 and `type`=0" );
+    $req=$bdd->prepare("SELECT sum(prix) as prixf FROM `reserver`,`annonce_expediteur` WHERE `id_res`=:id  and `id_annonce`=annonce_expediteur.id  and `type`=0" );
   $req->bindParam(':id',$id,PDO::PARAM_STR);
     $req->execute();
     $etat=$req->fetch();
     $req->closeCursor();
      $etat=$etat['prixf'];
-      $req=$bdd->prepare("SELECT sum(prix) as prixf FROM `reserver`,`annonce_prestataire` WHERE `id_user`=:id  and `id_annonce`=annonce_prestataire.id and `deposer`=1 and `type`=1" );
+      $req=$bdd->prepare("SELECT sum(prix) as prixf FROM `reserver`,`annonce_prestataire` WHERE `id_user`=:id  and `id_annonce`=annonce_prestataire.id  and `type`=1" );
   $req->bindParam(':id',$id,PDO::PARAM_STR);
     $req->execute();
     $etat1=$req->fetch();
@@ -124,7 +124,7 @@ function nonpayer($id){
      global $bdd;
     $req=$bdd->prepare("(SELECT *,DATE_FORMAT(date, '%Y-%m-%d') DATEONLY, 
        DATE_FORMAT(date,'%H:%i:%s') TIMEONLY,DATE_FORMAT(datea, '%Y-%m-%d') DATEONLYA, 
-       DATE_FORMAT(datea,'%H:%i:%s') TIMEONLYA FROM `annonce_prestataire` WHERE `id_user`=:id and id in (select id_annonce from `reserver` where `type`=1 and payer= 0 and deposer=1))");
+       DATE_FORMAT(datea,'%H:%i:%s') TIMEONLYA FROM `annonce_prestataire` WHERE `id_user`=:id and id in (select id_annonce from `reserver` where `type`=1 and payer= 0))");
   $req->bindParam(':id',$id,PDO::PARAM_STR);
    $req->execute();
     $etat=$req->fetchAll();

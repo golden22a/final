@@ -12,13 +12,13 @@ function annonce($id){
 
 function annonce_terminer($id){
    global $bdd;
-    $req=$bdd->prepare("SELECT count(id_res) as nombre FROM `reserver` WHERE `id_res`=:id and `deposer`=1 and `type`=1" );
+    $req=$bdd->prepare("SELECT count(id_res) as nombre FROM `reserver` WHERE `id_res`=:id and  `type`=1" );
   $req->bindParam(':id',$id,PDO::PARAM_STR);
     $req->execute();
     $etat=$req->fetch();
      $req->closeCursor();
     $etat=$etat['nombre'];
-     $req=$bdd->prepare("SELECT count(annonce_expediteur.id_user) as nombre FROM `reserver`,`annonce_prestataire` WHERE `id_user`=:id and `id_annonce`=annonce_expediteur.id and `deposer`=1 and `type`=0" );
+     $req=$bdd->prepare("SELECT count(annonce_expediteur.id_user) as nombre FROM `reserver`,`annonce_prestataire` WHERE `id_user`=:id and `id_annonce`=annonce_expediteur.id  and `type`=0" );
   $req->bindParam(':id',$id,PDO::PARAM_STR);
     $req->execute();
     $etat1=$req->fetch();
