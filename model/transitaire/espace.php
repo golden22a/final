@@ -269,7 +269,7 @@ $pdf->Write(0,$chai , '', 0, 'C', true, 0, false, false, 0);
 
 
 
-$left_column = '<br><br><br><br><b><u>Nom du client final (expéditeur)</u></b><br><br>'.$ss['nome'].',<br>'.$ss['registree'].'<br>'.$ss['adresse_entrepot'].'numero:'.$ss['numero_entrepot'].'<br>'.$ss['numeroe'].'';
+$left_column = '<br><br><br><br><b><u>Nom du client final (expéditeur)</u></b><br><br>'.$ss['nome'].',<br>'.$ss['registree'].'<br>'.$ss['adresse_entrepot'].'<br>'.'numero de l entrepot :'.$ss['numero_entrepot'].'<br>'.$ss['numeroe'].'';
 
 
 $right_column = '<br><br><br><br><b><u>Nom du prestataire logistique </u></b><br><br>'.$ss['nomp'].'<br>'.$ss['registrep'].' <br>'.$ss['numerop'].'';
@@ -327,7 +327,7 @@ $html='<br><br>
 <table border="1" width= "100%" cellpadding= "4">
 <tr>
 <td width= "40%">Identifiant de la flotte ou du camion :</td>
-<td width= "60%">'.$ss['matricule'].' </td>
+<td width= "60%">'.$ss['matricul'].' </td>
 </tr>
 <tr>
 <td width= "40%">Nom complet du chauffeur :</td>
