@@ -135,57 +135,55 @@
             </div>
             <!-- #User Info -->
             <!-- Menu -->
-            <div class="menu">
+           <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li >
+                    <li>
                         <a href="espace_expediteur.php">
                             <i class="material-icons">verified_user</i>
                             <span>Espace utilisateur</span>
                         </a>
                     </li>
                     <li>
-                        <a href="exp.php">
-                            <i class="material-icons">create_new_folder</i>
-                            <span>Deposer un depart</span>
+                        <a href="recherche_avancer_expediteur.php">
+                            <i class="material-icons">search</i>
+                            <span>Recherche avancée</span>
                         </a>
                     </li>
                     <li>
-                        <a href="recherche_avancer_expediteur.php">
-                            <i class="material-icons">search</i>
-                            <span>Recherche avancez</span>
+                        <a href="exp.php">
+                            <i class="material-icons">create_new_folder</i>
+                            <span>Déposer un départ</span>
                         </a>
                     </li>
                     <li>
                         <a href="confirmer_reservation_expediteur.php">
                             <i class="material-icons">access_time</i>
-                            <span>Confirmer une reservation</span>
+                            <span>Confirmer une réservation</span>
                         </a>
                     </li>
     
                     
                     
-                     <li class="header">LABELS</li>
-                    <li >
-                        <a href="annonce_deposer_expediteur.php">
-                            <i class="material-icons col-blue">donut_large</i>
-                            <span>Annonce deposer</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="annonce_terminer_expediteur.php">
-                            <i class="material-icons col-pink">donut_large</i>
-                            <span>Annonce terminer</span>
-                        </a>
-                    </li>
-        
+                    
                    
                     
-
-                    
+             
+                    <li class="header">LABELS</li>
+                    <li>
+                        <a href="annonce_deposer_expediteur.php">
+                            <i class="material-icons col-blue">donut_large</i>
+                            <span>Historique des annonces</span>
+                        </a>
+                    </li>
+                    <li  class="active">
+                        <a href="annonce_terminer_expediteur.php">
+                            <i class="material-icons col-pink">donut_large</i>
+                            <span>Annonces achevées</span>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-            <!-- #Menu -->
+            </div> <!-- #Menu -->
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">

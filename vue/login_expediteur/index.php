@@ -122,10 +122,10 @@
    <div class="section"></div>
   <main>
     <center>
-      <img class="responsive-img" style="width: 250px;" src="Vue/Assets/brilog1.png" />
+      <img class="responsive-img" style="width: 50px;" src="Vue/Assets/brilog1.png" />
       
 
-      <h5 class="indigo-text">Please, login into your account</h5>
+      <h5 class="indigo-text">Veuillez vous connecter à votre compte</h5>
       <div class="section"></div>
 
       <div class="container">
@@ -140,24 +140,24 @@
             <div class='row'>
               <div class='input-field col s12'>
                 <input class='validate' type='text' name='username' id='username' />
-                <label for='username'>Enter your Username</label>
+                <label for='username'>Entrez votre nom d'utilisateur</label>
               </div>
             </div>
 
             <div class='row'>
               <div class='input-field col s12'>
                 <input class='validate' type='password' name='password' id='password' />
-                <label for='password'>Enter your password</label>
+                <label for='password'>Entrez votre mot de passe </label>
               </div>
               <label style='float: right;'>
-								<a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+								<a class='pink-text' href='#!'><b>mot de passe oublié ?</b></a>
 							</label>
             </div>
 
             <br />
             <center>
               <div class='row'>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Se connecter</button>
               </div>
             </center>
           </form>

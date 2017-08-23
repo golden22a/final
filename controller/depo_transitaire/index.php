@@ -10,7 +10,7 @@ else{
    $ss=insert_exp($_POST['wilayad'],$_POST['communed'],$_POST['rued'],$_POST['wilayaa'],$_POST['communea'],$_POST['ruea'],$_POST['dated_submit'],$_POST['timed_submit'],$_POST['datea_submit'],$_POST['timea_submit'],$_POST['type'],$_POST['tonage'],$_POST['prix'],$_SESSION['id']);
     if($ss)
         echo "<script>
-alert('Annonce Ajouter avec succes');
+alert('Annonce Ajoutée avec succès, elle apparaitra sur l\'espace expéditeurs');
 window.location.href='espace_transitaire.php';
 </script>";else
        echo "<script>

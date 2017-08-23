@@ -7,7 +7,7 @@ include_once('Model/transitaire/espace.php  ');
     if($etat){
         
                   echo "<script>
-alert('reservation ajouter vous reserverez un email lors de la confirmation de lexpediteur');
+alert('réservation effectuée, en attente de confirmation de l\'expéditeur');
 window.location.href='espace_transitaire.php';
 </script>";
     }

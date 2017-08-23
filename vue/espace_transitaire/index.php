@@ -126,21 +126,22 @@
                         </a>
                     </li>
                     <li>
-                        <a href="depo.php">
-                            <i class="material-icons">create_new_folder</i>
-                            <span>Deposer un depart</span>
+                        <a href="recherche_avancer_transitaire.php">
+                            <i class="material-icons">search</i>
+                            <span>Recherche avancée</span>
                         </a>
                     </li>
                     <li>
-                        <a href="recherche_avancer_transitaire.php">
-                            <i class="material-icons">search</i>
-                            <span>Recherche avancez</span>
+                        <a href="depo.php">
+                            <i class="material-icons">create_new_folder</i>
+                            <span>Déposer un départ</span>
                         </a>
                     </li>
+                  
                     <li>
                         <a href="confirmer_reservation_transitaire.php">
                             <i class="material-icons">access_time</i>
-                            <span>Confirmer une reservation</span>
+                            <span>Confirmez une réservation</span>
                         </a>
                     </li>
     
@@ -154,19 +155,19 @@
                     <li>
                         <a href="annonce_deposer_transitaire.php">
                             <i class="material-icons col-blue">donut_large</i>
-                            <span>Annonce deposer</span>
+                            <span>Historique des annonces</span>
                         </a>
                     </li>
                     <li>
                         <a href="annonce_terminer_transitaire.php">
                             <i class="material-icons col-pink">donut_large</i>
-                            <span>Annonce terminer</span>
+                            <span>Annonces achevées</span>
                         </a>
                     </li>
                     <li>
-                        <a href="annonce_nonpayer_trensitaire.php">
+                        <a href="annonce_nonpayer_transitaire.php">
                             <i class="material-icons col-red">donut_large</i>
-                            <span>Course non payez</span>
+                            <span>Courses non payées</span>
                         </a>
                     </li>
                 </ul>
@@ -175,7 +176,7 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2017 <a href="javascript:void(0);">O-logistic</a>.
+                    &copy; 2017 <a href="javascript:void(0);">O-logistics</a>.
                 </div>
                 <div class="version">
                     <b>Version: </b> 1.0
@@ -292,7 +293,7 @@
                             <i class="material-icons">file_download</i>
                         </div>
                         <div class="content">
-                            <div class="text">Annonce deposer</div>
+                            <div class="text">Annonces deposées</div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"><?php echo $nombre; ?></div>
                         </div>
                     </div>
@@ -304,7 +305,7 @@
                             <i class="material-icons">file_upload</i>
                         </div>
                         <div class="content">
-                            <div class="text">course terminer</div>
+                            <div class="text">courses terminées</div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"><?php echo $terminer; ?></div>
                         </div>
                     </div>
@@ -315,7 +316,7 @@
                             <i class="material-icons">monetization_on</i>
                         </div>
                         <div class="content">
-                            <div class="text">chiffre daffaire</div>
+                            <div class="text">chiffre d'affaire</div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"> <?php echo $chifre; ?> DA</div>
                         </div>
                     </div>
@@ -326,7 +327,7 @@
                             <i class="material-icons">monetization_on</i>
                         </div>
                         <div class="content">
-                            <div class="text">reste a paye</div>
+                            <div class="text">reste à payer</div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"><?php echo $reste; ?> DA</div>
                         </div>
                              </div></div></a>
@@ -334,6 +335,9 @@
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="body table-responsive">
+                     <div class="panel-heading">
+                <h3 class="panel-title">Besoin des expéditeurs</h3>
+            </div>
             <table class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -356,7 +360,7 @@
                     foreach($affiche as $cle=>$ss)
                     {
                         echo "<tr><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td><td><button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm' onclick='fset(".$ss['id'].");'>
-    reserver
+    reserver 
 </button></td></tr>";
                         
                     }
@@ -401,7 +405,7 @@
                       <input type="hidden" id="x" name="id_annonce" value>
                   </div>
                      <div class="col-sm-offset-5 col-sm-4">
-                  <button type="submit" class="btn btn-info btn-lg">reserver</button>
+                  <button type="submit" class="btn btn-info btn-lg">réserver l'annonce</button>
                     </div>
                 </form>
                 
