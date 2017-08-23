@@ -124,7 +124,7 @@
    <div class="section"></div>
   <main>
     <center>
-      <img class="responsive-img" style="width: 250px;" src="Vue/Assets/brilog1.png" />
+      <img class="responsive-img" style="width: 50px;" src="Vue/Assets/brilog1.png" />
       
 
       <h5 class="indigo-text">Please, login into your account</h5>
