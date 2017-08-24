@@ -169,9 +169,16 @@
     </center>
  </div>
       
-          <div class="col m6 col s12 " id="left_pane" style="height: 600 px; color: white;">
-
-         rahiii naaaaaaaaaaaaaaaaa
+          <div class="col m6 col s12 " id="left_pane" style="height: 600 px; color: white;"> <br />
+<BR>
+        <font size="10"><font face="Verdana"> BriLog,</font></font> <font size="5"><font face="Verdana">votre réseau de transporteurs </font></font>  <br />
+<BR>
+              <font size="4"><font face="Verdana">- Trouvez votre Transporteur en 03 clic </font></font> <br />
+<BR>
+              <font size="4"><font face="Verdana">- Vous économiserez jusqu'à 30% sur votre course </font></font> <br />
+<BR>
+              <font size="4"><font face="Verdana">- Inscription 100% gratuite et sans abonnement </font></font> <br />
+<BR>
           </div>
       </div>
   </main>
@@ -180,11 +187,11 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">O-logistics</h5>
-                <p class="white-text text-lighten-4">Premiere plateform de mise en relation entre prestataire logistique et expediteur </p>
-                  <span class="left"> <img src="Vue/Assets/Phone_48px.png" width="25px"> +213 0552 827 554 <br>
-                      <img src="Vue/Assets/Phone_48px.png"  width="25px"> +213 0552 824 334</span>
+                <p class="white-text text-lighten-4">Première plateforme de mise en relation entre prestataires logistique et expediteurs </p>
+                  <span class="left"> <img src="Vue/Assets/Phone_48px.png" width="25px"> +213 (0) 552 827 554 <br>
+                      <img src="Vue/Assets/Phone_48px.png"  width="25px"> +213 (0) 552 824 334</span>
                       <span class="left "><img src="Vue/Assets/Email_48px.png" width="25px">o-logistics@cdta.dz   <br>
-                          <img src="Vue/Assets/Google%20Maps_48px.png" width="25px"> CDTA-Cite 20 aout 1956 Baba Hassen,Alger 16303
+                          <img src="Vue/Assets/Google%20Maps_48px.png" width="25px"> CDTA-Cité 20 aout 1956 Baba Hassen,Alger 16303
                   </span>
               
               <div class="habet">

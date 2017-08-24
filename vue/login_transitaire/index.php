@@ -170,9 +170,17 @@
       
           </center>   </div>
       
-          <div class="col m6 col s12 " id="left_pane" style="height: 600 px; color: white;">
-
-         rahiii naaaaaaaaaaaaaaaaa
+          <div class="col m6 col s12 " id="left_pane" style="height: 600 px; color: white;"> <br />
+<BR>
+        <font size="10"><font face="Verdana"> BriLog </font></font>  <br />
+        <BR>
+              <font size="4"><font face="Verdana">- Trouvez votre expéditeur en 03 clic </font></font> <br />
+<BR>
+              <font size="4"><font face="Verdana">- Inscription 100% gratuite et sans abonnement </font></font> <br />
+<BR>
+              <font size="4"><font face="Verdana">- Vous ne payez rien si BriLog ne vous trouve pas un expéditeur </font></font> <br />
+<BR>
+              
           </div>
       </div>
 
