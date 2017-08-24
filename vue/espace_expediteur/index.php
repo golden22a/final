@@ -309,19 +309,19 @@
             <table class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                <td>wilaya de depart</td> 
+              <td>wilaya de départ</td> 
                      <td>Adreese</td>
-                     <td>date de depart</td>
-                     <td> heur de depart</td>
-                     <td>Wilaya darriver</td>
+                     <td>date de départ</td>
+                     <td> heure de départ</td>
+                     <td>Wilaya d'arrivée</td>
                      <td>Adresse</td>
-                    <td>date arriver</td>
-                     <td>heur darriver</td>
-                     <td>Camion</td>
-                    <td>Tonage</td>
+                     <td>date d'arrivée</td>
+                     <td>heure d'arrivée</td>
+                     <td>Véhicule</td>
+                    <td>Charge utile (KG)</td>
                     <td>prix</td>
-                    <td>Reserver</td>
-                    <td>Proformat</td>
+                    <td>action</td>
+                    <td>Proforma</td>
                     
                     </tr>
                 </thead>

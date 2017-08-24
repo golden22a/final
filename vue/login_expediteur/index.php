@@ -41,6 +41,8 @@
 
     main {
       flex: 1 0 auto;
+        background-image: url('Vue/Assets/login_exped.jpg');
+        background-size: cover;
     }
 
     body {
@@ -101,6 +103,9 @@
      #menu{
          color: black;
      }
+       #left_pane{
+    background:     rgba(244, 252, 251,0.5);         
+     }
 </style>
     </head>
 <body>
@@ -119,40 +124,37 @@
   </nav>
 
         
-   <div class="section"></div>
   <main>
+       <div class="row">
+          <div class="col m6 col s12 " >
     <center>
       <img class="responsive-img" style="width: 50px;" src="Vue/Assets/brilog1.png" />
       
 
-      <h5 class="indigo-text">Veuillez vous connecter à votre compte</h5>
+      <h5 style="color: white;">Veuillez vous connecter à votre compte</h5>
       <div class="section"></div>
 
       <div class="container">
-        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+        <div class="z-depth-1 grey lighten-4 row" style=" display: inline-block; padding: 0px 48px 0px 48px; border: 1px solid #EEE;">
 
-          <form class="col s12" method="post">
-            <div class='row'>
-              <div class='col s12'>
-              </div>
-            </div>
+            <form class="col s12" method="post">
+           
 
             <div class='row'>
               <div class='input-field col s12'>
                 <input class='validate' type='text' name='username' id='username' />
                 <label for='username'>Entrez votre nom d'utilisateur</label>
               </div>
-            </div>
-
-            <div class='row'>
-              <div class='input-field col s12'>
+                 <div class='input-field col s12'>
                 <input class='validate' type='password' name='password' id='password' />
-                <label for='password'>Entrez votre mot de passe </label>
+                <label for='password'>Entrez votre mot de passe</label>
               </div>
-              <label style='float: right;'>
+                <label style='float: right;'>
 								<a class='pink-text' href='#!'><b>mot de passe oublié ?</b></a>
 							</label>
             </div>
+
+           
 
             <br />
             <center>
@@ -165,9 +167,13 @@
       </div>
       
     </center>
+ </div>
+      
+          <div class="col m6 col s12 " id="left_pane" style="height: 600 px; color: white;">
 
-    <div class="section"></div>
-    <div class="section"></div>
+         rahiii naaaaaaaaaaaaaaaaa
+          </div>
+      </div>
   </main>
     <footer class="page-footer grey">
           <div class="container">
