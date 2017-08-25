@@ -290,13 +290,13 @@
             <table id="table" class="table table-bordered table-striped display">
                 <thead>
                      <tr class="filters">
-                        <th>nom entreprise</th>
-                        <th>nom du gerent</th>
-                        <th>nom chauffeur</th>
-                        <th>matricul</th>
-                          <th>information</th>
-                        <th>confirmer</th>
-                         <th>refuser</th>
+                        <th>Dénomination de l'entreprise</th>
+                        <th>Nom du gérant</th>
+                        <th>Nom chauffeur</th>
+                        <th>Matricule</th>
+                          <th>Information</th>
+                        <th>Confirmez</th>
+                         <th>Refusez</th>
                     </tr>      
                
               
@@ -346,17 +346,17 @@
                 <table id="table" class="table table-bordered table-striped display ">
                 <thead>
                      <tr class="active">
-                        <th>wilaya de depart</th>
+                        <th>Wilaya de départ</th>
                         <th>Adresse</th>
-                        <th>date de depart</th>
-                        <th>heur de depart</th>
-                          <th>wilaya darriver</th>
-                        <th>adresse</th>
-                        <th>date darriver</th>
-                        <th>heur darriver</th>
-                          <th>camion</th>
-                        <th>tonage</th>
-                        <th>prix</th>
+                        <th>Date de départ</th>
+                        <th>Heur de départ</th>
+                          <th>Wilaya d'arrivée</th>
+                        <th>Adresse</th>
+                        <th>Date d'arrivée</th>
+                        <th>Heur d'arrivéer</th>
+                          <th>Véhicule </th>
+                        <th>Charge utile (Kg)</th>
+                        <th>Prix</th>
                     </tr>      
                
               

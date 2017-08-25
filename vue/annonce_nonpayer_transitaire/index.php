@@ -327,18 +327,18 @@
                 <thead>
                      <tr class="filters">
                          
-                        <th><input type="text" class="form-control" placeholder="wilaya de depart" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Wilaya de départ" disabled></th>
                         <th><input type="text" class="form-control" placeholder="Adresse" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="date de depart" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="heur de depart" disabled></th>
-                          <th><input type="text" class="form-control" placeholder="wilaya darriver" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="adresse" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="date darriver" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="heur darriver" disabled></th>
-                          <th><input type="text" class="form-control" placeholder="camion" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="tonage" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="prix" disabled></th>
-                          <th><input type="text" class="form-control" placeholder="prix a payer" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Date de départ" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Heure de départ" disabled></th>
+                          <th><input type="text" class="form-control" placeholder="Wilaya d'arrivée" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Adresse" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Date d'arrivée" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Heure d'arrivée" disabled></th>
+                          <th><input type="text" class="form-control" placeholder="Véhicule" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Charge utile (Kg)" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Prix" disabled></th>
+                          <th><input type="text" class="form-control" placeholder="Reste à payer" disabled></th>
                          
                          
                     </tr>      

@@ -170,7 +170,9 @@
       
           </center>   </div>
       
-          <div class="col m6 col s12 " id="left_pane" style="height: 600 px; color: white;"> <br />
+          <div class= id="left_pane" style="height: 600 px; color: white;"> <br />
+<BR>
+<br />
 <BR>
         <font size="10"><font face="Verdana"> BriLog </font></font>  <br />
         <BR>

@@ -193,7 +193,7 @@ $('.timepicker').pickatime({
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="espace_transitaire.php"><?php echo $_SESSION['user'];?></a></li>
-        <li><a href="deco.php">Deconnexion</a></li>
+        <li><a href="deco.php">Déconnexion</a></li>
       </ul>
     </div>
   </nav>
@@ -206,17 +206,17 @@ $('.timepicker').pickatime({
       <div class="row">
         <div class="input-field col s6">
           <select id="wilayad" name="wilayad" required="" aria-required="true">
-      <option value="" disabled selected>Choisire la wilaya de depart</option>
+      <option value="" disabled selected>Choisir la wilaya de départ</option>
 
     </select>
-            <label >Wilaya de depart <strong> *</strong></label>
+            <label >Wilaya de départ <strong> *</strong></label>
         </div>
             <div class="input-field col s6" >
           <select id="communed" name="communed" id="communed" required="" aria-required="true">
-      <option value="" disabled selected>Choisire la ville de depart</option>
+      <option value="" disabled selected>Choisir la ville de départ</option>
 
     </select>
-            <label >ville de depart  <strong> *</strong></label>
+            <label >ville de départ  <strong> *</strong></label>
         </div>
         <div class="input-field col s12">
           <input id="rued" type="text" class="validate" name="rued">
@@ -235,17 +235,17 @@ $('.timepicker').pickatime({
         <div class="row">
         <div class="input-field col s6">
           <select id="wilayaa" name="wilayaa" required="" aria-required="true">
-      <option value="" disabled selected>Choisire la wilaya d'arriver</option>
+      <option value="" disabled selected>Choisir la wilaya d'arrivée</option>
 
     </select>
-            <label >Wilaya d'arriver <strong> *</strong></label>
+            <label >Wilaya d'arrivée <strong> *</strong></label>
         </div>
             <div class="input-field col s6" required="" aria-required="true">
           <select id="communea" name="communea" id="communea">
-      <option value="" disabled selected>Choisire la ville d'arriver</option>
+      <option value="" disabled selected>Choisir la ville d'arrivée</option>
 
     </select>
-            <label >ville d'arriver  <strong> *</strong></label>
+            <label >ville d'arrivée  <strong> *</strong></label>
         </div>
         <div class="input-field col s12">
           <input id="ruea" type="text" class="validate" name="ruea">
@@ -253,37 +253,37 @@ $('.timepicker').pickatime({
         </div>
              <div class="input-field col s4">
           <input id="datea" type="date" class="validate datepicker" name="datea" required="" aria-required="true">
-          <label for="datea">Date d'arriver</label>
+          <label for="datea">Date d'arrivée</label>
         </div>
            <div class="input-field col s4 offset-s2"> 
           <input id="heura" type="time" class="timepicker" name="timea" required="" aria-required="true">
-          <label for="heura">heur d'arriver</label>
+          <label for="heura">heure d'arrivée</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
           <select name="type" required="" aria-required="true">
-      <option value="" disabled selected>Choisire la type de camion</option>
-              <option valeu="0" data-icon="Vue/Assets/2.2camion_citerne.jpg" class="left circle"> le camion citerne</option>
-              <option valeu="1" data-icon="Vue/Assets/CAMBEN_PH_01.jpg" class="left circle"> Le camion benne</option>
-              <option valeu="2" data-icon="Vue/Assets/240_F_88623653_wTscB19tkxCnrZTGNKt0Fai7ASi5ssZe.jpg" class="left circle"> Le camion frigo</option>
-              <option valeu="3" data-icon="Vue/Assets/camion_a_bras.jpg" class="left circle"> Le camion Ampliroll 
+      <option value="" disabled selected>Choisir le type de véhicule </option>
+              <option valeu="0" data-icon="Vue/Assets/2.2camion_citerne.jpg" class="left circle"> Camion citerne</option>
+              <option valeu="1" data-icon="Vue/Assets/CAMBEN_PH_01.jpg" class="left circle"> Camion benne</option>
+              <option valeu="2" data-icon="Vue/Assets/240_F_88623653_wTscB19tkxCnrZTGNKt0Fai7ASi5ssZe.jpg" class="left circle"> Camion frigo</option>
+              <option valeu="3" data-icon="Vue/Assets/camion_a_bras.jpg" class="left circle"> Camion Ampliroll 
 </option>
-              <option valeu="4" data-icon="Vue/Assets/360x250_porteVoiture-nissan-cabstar,0.jpg" class="left circle"> Le camion
+              <option valeu="4" data-icon="Vue/Assets/360x250_porteVoiture-nissan-cabstar,0.jpg" class="left circle"> Camion
 Plateau</option>
-              <option valeu="5" data-icon="Vue/Assets/large_958a3ae65db73b69a8d3dad61021376e.jpg" class="left circle"> le camion fourgon</option>
+              <option valeu="5" data-icon="Vue/Assets/large_958a3ae65db73b69a8d3dad61021376e.jpg" class="left circle"> Camion fourgon</option>
               <option valeu="6" data-icon="Vue/Assets/porte-char_trm_4000.jpg" class="left circle"> le camion porte char</option>
-              <option valeu="7" data-icon="Vue/Assets/icone-aide.png" class="left circle"> autre camion </option>
+              <option valeu="7" data-icon="Vue/Assets/icone-aide.png" class="left circle"> autre véhicule </option>
               
-    </select><label>Type du camion
+    </select><label>Type de véhicule
                         </label>
         </div>
           <div class="input-field col s3">
-          <input id="tonage" type="number" class="validate" name="tonage">
-          <label for="tonage">tonage</label>
+          <input id="tonage" type="number" class="validate" name="Charge utile (Kg)">
+          <label for="tonage">Charge utile (Kg)</label>
         </div>
            <div class="input-field col s3">
-          <input id="prix" type="number" class="validate" name="prix">
+          <input id="prix" type="number" class="validate" name="Prix">
           <label for="prix">Prix</label>
         </div>
       </div>

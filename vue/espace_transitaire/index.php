@@ -342,7 +342,7 @@
                 <thead>
                 <tr>
                 <td>wilaya de départ</td> 
-                     <td>Adreese</td>
+                     <td>Adresse</td>
                      <td>date de départ</td>
                      <td> heure de départ</td>
                      <td>Wilaya d'arrivée</td>
