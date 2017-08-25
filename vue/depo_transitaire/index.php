@@ -271,12 +271,19 @@ $('.timepicker').pickatime({
 </option>
               <option valeu="4" data-icon="Vue/Assets/360x250_porteVoiture-nissan-cabstar,0.jpg" class="left circle"> Camion
 Plateau</option>
-              <option valeu="5" data-icon="Vue/Assets/large_958a3ae65db73b69a8d3dad61021376e.jpg" class="left circle"> Camion fourgon</option>
-              <option valeu="6" data-icon="Vue/Assets/porte-char_trm_4000.jpg" class="left circle"> le camion porte char</option>
-              <option valeu="7" data-icon="Vue/Assets/icone-aide.png" class="left circle"> autre véhicule </option>
+              <option valeu="5" data-icon="Vue/Assets/Camion-fourgon_30à50M3.jpg" class="left circle"> Camion-fourgon 30 à 50 M <sup>3 </sup>  </option>
+              <option valeu="6" data-icon="Vue/Assets/Camion-fourgon_55à60M3.jpg" class="left circle"> Camion-fourgon 55 à 66 M <sup>3 </sup>  </option>
+              <option valeu="7" data-icon="Vue/Assets/porte-char_trm_4000.jpg" class="left circle"> Camion porte char</option>
+              <option valeu="8" data-icon="Vue/Assets/benne_3t5.jpg" class="left circle"> Benne 3T5 </option>
+              <option valeu="9" data-icon="Vue/Assets/kangoo_3m3.jpg" class="left circle"> utilitaire 3 M <sup> 3</sup> </option>
+              <option valeu="10" data-icon="Vue/Assets/jumpy_6m3.jpg" class="left circle"> utilitaire 6 M <sup>3 </sup> </option>
+              <option valeu="11" data-icon="Vue/Assets/jumper_7à9m3.jpg" class="left circle"> Fourgon 7 à 9 M <sup>3 </sup> </option>
+              <option valeu="12" data-icon="Vue/Assets/fourgon_10à12m3.jpg" class="left circle"> Fourgon 10 à 12 M <sup>3 </sup> </option>
+              <option valeu="13" data-icon="Vue/Assets/fougon-camion_20à22m3.jpg" class="left circle"> Fourgon-camion 20 à 22 M <sup>3 </sup> </option>
+              <option valeu="14" data-icon="Vue/Assets/icone-aide.png" class="left circle"> autre véhciule </option>
               
-    </select><label>Type de véhicule
-                        </label>
+    </select><label>Type du camion
+                        </label>>
         </div>
           <div class="input-field col s3">
           <input id="tonage" type="number" class="validate" name="Charge utile (Kg)">
