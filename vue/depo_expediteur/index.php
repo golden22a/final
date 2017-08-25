@@ -280,11 +280,11 @@ Plateau</option>
                         </label>
         </div>
           <div class="input-field col s3">
-          <input id="tonage" type="number" class="validate" name="Charge utile (Kg)">
+          <input id="tonage" type="number" class="validate" name="tonage">
           <label for="tonage"> Charge utile (Kg) </label>
         </div>
            <div class="input-field col s3">
-          <input id="prix" type="number" class="validate" name="Prix">
+          <input id="prix" type="number" class="validate" name="prix">
           <label for="prix">Prix</label>
         </div>
       </div>
