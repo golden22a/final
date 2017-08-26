@@ -74,7 +74,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mon Compte
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><a href="param.php">Paramètres</a></li>
+            <li><a href="param_exp.php">Paramètres</a></li>
             <li><a href="deco.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
       </li>                     <!-- #END# Call Search -->

@@ -97,8 +97,14 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Call Search -->
-                    <li><a href="deco.php"><i class="material-icons">file_upload</i></a></li>
-                    <!-- #END# Call Search -->
+<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mon Compte
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="param_exp.php">Paramètres</a></li>
+            <li><a href="deco.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+      </li>                      <!-- #END# Call Search -->
                     <!-- Notifications -->
                 
                     <!-- #END# Notifications -->
