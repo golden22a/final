@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -12,25 +12,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="Vue/Assets/admin/plugins/bootstrap/css/bootstrap.css" type="text/css"rel="stylesheet">
+    <link href="Vue/Assets/admin/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="Vue/Assets/admin/plugins/node-waves/waves.css" type="text/css"rel="stylesheet" />
+    <link href="Vue/Assets/admin/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="Vue/Assets/admin/plugins/animate-css/animate.css" type="text/css"rel="stylesheet" />
+    <link href="Vue/Assets/admin/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="Vue/Assets/admin/css/style.css" type="text/css"rel="stylesheet">
+    <link href="Vue/Assets/admin/css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="Vue/Assets/admin/css/themes/all-themes.css" type="text/css"rel="stylesheet" />
-        <style>
-
-            .aa {
-     width: 80%;
-}
-        </style>
+    <link href="Vue/Assets/admin/css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
 <body class="theme-red">
@@ -83,7 +77,7 @@
             <li><a href="param_exp.php">Paramètres</a></li>
             <li><a href="deco.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
-      </li>                      <!-- #END# Call Search -->
+      </li>                     <!-- #END# Call Search -->
                     <!-- Notifications -->
                 
                     <!-- #END# Notifications -->
@@ -120,10 +114,10 @@
             </div>
             <!-- #User Info -->
             <!-- Menu -->
-           <div class="menu">
+            <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li>
+                    <li class="active">
                         <a href="espace_expediteur.php">
                             <i class="material-icons">verified_user</i>
                             <span>Espace utilisateur</span>
@@ -141,7 +135,7 @@
                             <span>Déposer un départ</span>
                         </a>
                     </li>
-                    <li  class="active">
+                    <li>
                         <a href="confirmer_reservation_expediteur.php">
                             <i class="material-icons">access_time</i>
                             <span>Confirmer une réservation</span>
@@ -173,7 +167,7 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2017 <a href="javascript:void(0); ">O-logistic</a>.
+                    &copy; 2017 <a href="javascript:void(0);">O-logistic</a>.
                 </div>
                 <div class="version">
                     <b>Version: </b> 1.0
@@ -280,106 +274,61 @@
     </section>
 
     <section class="content">
-        <div class="container-fluidr">
-        <div class="block-header">
-                </div>
-             </div>
-        <div class="row clearfix">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                 <div class="row">
-                <div class="body table-responsive">
-                     <div class="panel panel-primary filterable">
-            <div class="panel-heading">
-                <h3 class="panel-title">Reservation en attente</h3>
-                
-            </div>
-            <table id="table" class="table table-bordered table-striped display">
-                <thead>
-                     <tr class="filters">
-                        <th>Dénomination de l'entreprise</th>
-                        <th>Nom du gérant</th>
-                        <th>Nom chauffeur</th>
-                        <th>Matricule</th>
-                          <th>Information</th>
-                        <th>Confirmez</th>
-                         <th>Refusez</th>
-                    </tr>      
-               
-              
-                </thead>
-                <tbody>
-                    <?php
-                    foreach($reserver as $cle=>$ss)
-                    {
-                        echo "<tr><td>".$ss['Nom_entreprise']."</td><td>".$ss['Nom_user']."</td><td>".$ss['nom_chauffeur']."</td><td>".$ss['matricul']."</td></td><td><button class='btn btn-info btn-sm' data-toggle='modal' data-target='#info".$ss['id_annonce']."'>
-    info
-</button></td></td><td><button class='btn btn-primary btn-sm' data-toggle='modal' data-target='#myModalNorm' onclick='fset(".$ss[0].");'>
-    confirmer
-</button></td><td><button class='btn btn-danger btn-sm'  onclick='anl(".$ss[0].");'>
-    refuser
-</button></td></tr>";
-                        
-                    }
-                    
-                    ?>
-                </tbody>
-            </table>
-                </div>
-                </div>
-                </div></div></div>
-          <?php
-                    foreach($reserver as $cle=>$ss)
-                    {?>
-        <div class="modal fade" id="<?php echo "info".$ss['id_annonce'];?>" tabindex="-1" role="dialog" 
-     aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog aa">
-        <div class="modal-content aa">
-            <!-- Modal Header -->
-            <div class="modal-header aa">
-                <button type="button" class="close" 
-                   data-dismiss="modal">
-                       <span aria-hidden="true">&times;</span>
-                       <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">
-                    information sur la livraison
-                </h4>
-            </div>
+      
+     <h1 style=" text-align: center;">Vos informations</h1>
+       
+        <br><br><br><br>
+        <table style="width:40%">
+
+  <tr>
+    <td><h5>Nom d'entreprise : </h5></td>
+    <td><?php echo   $nomm_en; ?></td> 
+  </tr>
+  <tr>
+    <td><h5>Nom d'utilisateur : </h5></td>
+    <td>  <?php echo $nomm_ut; ?></td> 
+  </tr>
+  <tr>
+    <td><h5>Registre commerce :</h5></td>
+    <td><?php echo $reg ?></td> 
+  </tr>
+            <tr>
+    <td>
+<h5>Rue :</h5></td>
+    <td><?php echo $rue ?></td> 
+  </tr>
+             <tr>
+    <td><h5>Commun :</h5></td>
+    <td>   <?php echo $commun ?></td> 
+  </tr>
+             <tr>
+    <td>   <h5>Wilaya :</h5></td>
+    <td> <?php echo $wilaya ?></td> 
+  </tr>
+             <tr>
+    <td><h5>Email :</h5></td>
+    <td> <?php echo $email; ?></td> 
             
-            <!-- Modal Body -->
-            <div class="modal-body">
-                
-                <table id="table" class="table table-bordered table-striped display ">
-                <thead>
-                     <tr class="active">
-                        <th>Wilaya de départ</th>
-                        <th>Adresse</th>
-                        <th>Date de départ</th>
-                        <th>Heur de départ</th>
-                          <th>Wilaya d'arrivée</th>
-                        <th>Adresse</th>
-                        <th>Date d'arrivée</th>
-                        <th>Heur d'arrivéer</th>
-                          <th>Véhicule </th>
-                        <th>Charge utile (Kg)</th>
-                        <th>Prix</th>
-                    </tr>      
-               
-              
-                </thead>
-                <tbody>
-                  <?php
-                        echo "<tr class='active'><td>".$ss['wilaya_d']."</td><td>".$ss['commune_d'].", ".$ss['rue_d']."</td><td>".$ss['DATEONLY']."</td><td>".$ss['TIMEONLY']."</td><td>".$ss['wilaya_a']."</td><td>".$ss['commune_a'].", ".$ss['rue_a']."</td><td>".$ss['DATEONLYA']."</td><td>".$ss['TIMEONLYA']."</td><td>".$ss['type_camion']."</td><td>".$ss['tonage']."</td><td>".$ss['prix']."</td></tr>";
-                        
-                    }
-                    
-                    ?>
-                </tbody>
-            </table>
-                
-                
-            </div></div></div></div>
-        <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
+  </tr>
+             <tr>
+    <td> <h5>Telephone :</h5></td>
+    <td> <?php echo  $telephone; ?></td>
+                  <td>  
+      <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm2'> modifier</button>
+      </td>
+  </tr>
+             <tr>
+    <td><h5>Password :</h5></td>
+    <td>**************** </td>
+      <td>  
+      <button class='btn btn-primary btn-xs' data-toggle='modal' data-target='#myModalNorm'> modifier</button>
+      </td>
+  </tr>
+</table>
+          
+    
+        
+       <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
      aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -391,29 +340,75 @@
                        <span class="sr-only">Close</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    Reserver
+                    Modifier
                 </h4>
             </div>
             
             <!-- Modal Body -->
             <div class="modal-body">
                 
-                <form role="form-horizontal" method="post">
+                <form role="form-horizontal" method="post" id='pwdchange'>
                   <div class="form-group">
                       <div class="col-sm10">
-                      <input type="text" class="form-control"
-                      id="exampleInputEmail1" placeholder="numero entrepot" name="numero" required/>
+                      <input type="password" class="form-control"
+                      id="pw" placeholder="Mot de passe actuelle" name="pwd" required/>
                         </div>
                       </div>
                   <div class="form-group">
                      <div class="col-sm10">
-                      <input type="text" class="form-control"
-                          id="exampleInputPassword1" placeholder="adresse entrepot" name="adresse" required/>
+                      <input type="password" class="form-control"
+                          id="p1" placeholder="Nouveau Mot de passe" name="pwn" required/>
                       </div>
                       <input type="hidden" id="x" name="id_annonce" value>
+                  </div>  <div class="form-group">
+                     <div class="col-sm10">
+                      <input type="password" class="form-control"
+                          id="p2" placeholder="Retaper le mot de passe" name="pwn1" required/>
+                      </div>
+                    
                   </div>
                      <div class="col-sm-offset-5 col-sm-4">
-                  <button type="submit" class="btn btn-info btn-lg">reserver</button>
+                  <button type="button" class="btn btn-info btn-lg" onclick='fset();'>Modifier</button>
+                    </div>
+                </form>
+                
+                
+            </div></div></div></div>
+        
+        
+          
+        
+        
+        
+          <div class="modal fade" id="myModalNorm2" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Modifier
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form role="form-horizontal" method="post" id='phonechange'>
+                  <div class="form-group">
+                      <div class="col-sm10">
+                      <input type="text" class="form-control"
+                      id="pw" placeholder="Nouveau numéro" name="ph" required/>
+                        </div>
+                      </div>
+            
+                     <div class="col-sm-offset-5 col-sm-4">
+                  <button type="submit" class="btn btn-info btn-lg" >Modifier</button>
                     </div>
                 </form>
                 
@@ -441,19 +436,14 @@
 
     <!-- Demo Js -->
     <script src="Vue/Assets/admin/js/demo.js"></script>
-          
     <script>
-       function fset(x){
+    
+        function fset(x){
             $("#x").val(x);
             
         }
-        function anl(x){
-            $.post('confirmer_reservation_expediteur.php',{annonce:x},function(result){
-                location.reload();
-            });
-        }
+        
     </script>
-        </div></section>
 </body>
 
 </html>
