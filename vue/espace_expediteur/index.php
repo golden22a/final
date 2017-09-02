@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <me ta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Blank Page | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
     <link rel="icon" href="Vue/Assets/admin/favicon.ico" type="image/x-icon">

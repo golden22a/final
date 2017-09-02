@@ -283,7 +283,7 @@ Plateau</option>
               <option valeu="14" data-icon="Vue/Assets/icone-aide.png" class="left circle"> autre véhciule </option>
               
     </select><label>Type du camion
-                        </label>>
+                        </label>
         </div>
           <div class="input-field col s3">
           <input id="tonage" type="number" class="validate" name="tonage">
